@@ -1,0 +1,9 @@
+- name: Install Core packages
+  ansible.builtin.apt:
+    pkg:
+      - zsh
+      - git
+      - curl
+      - tmux
+      - stow
+      - neovim
