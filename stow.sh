@@ -6,4 +6,5 @@ cd ~/.dotfiles &&\
     bash\
     tmux\
     zsh\
-    nvim
+    nvim\
+    z

@@ -1,6 +1,6 @@
 - name: Install Core packages
-  ansible.builtin.apt:
-    pkg:
+  ansible.builtin.package:
+    name:
       - zsh
       - git
       - curl
