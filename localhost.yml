@@ -8,4 +8,5 @@
         state: present
   tasks:
     - include: tasks/core-setup.yml
+    - include: tasks/apps.yml
     - include: tasks/dotfiles.yml

@@ -1,0 +1,12 @@
+- name: Change Shell
+  shell: chsh -s `which zsh`
+- name: Install ohmyzsh
+  shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+- name: Install zsh plugin - auto complete
+  ansible.builtin.git:
+    repo: "https://github.com/zsh-users/zsh-autosuggestions.git"
+    dest: "~/.oh-my-zsh/plugins/zsh-autosuggestions"
+- name: Install AstroNvim
+  ansible.builtin.git:
+    repo: "https://github.com/AstroNvim/AstroNvim"
+    dest: ~/.config/nvim
