@@ -6,7 +6,7 @@
   ansible.builtin.git:
     repo: "https://github.com/zsh-users/zsh-autosuggestions.git"
     dest: "~/.oh-my-zsh/plugins/zsh-autosuggestions"
-- name: Install AstroNvim
+- name: Download AstroNvim
   ansible.builtin.git:
     repo: "https://github.com/AstroNvim/AstroNvim"
     dest: ~/.config/nvim
